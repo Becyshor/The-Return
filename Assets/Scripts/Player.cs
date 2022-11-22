@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public Location currentLocation;
 
+    public List<Item> inventory = new List<Item>();
+
     void Start()
     {
         
@@ -16,6 +18,7 @@ public class Player : MonoBehaviour
         
     }
 
+    //ChangeLocation method moves the player to the "connectionNoun" location
     public bool ChangeLocation(GameController controller, string connectionNoun)
     {
         Connection connection = currentLocation.GetConnection(connectionNoun);

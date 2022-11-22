@@ -11,6 +11,8 @@ public class Location : MonoBehaviour
 
     public Connection[] connections;
 
+    public List<Item> items = new List<Item>();
+
     void Start()
     {
         
@@ -21,7 +23,25 @@ public class Location : MonoBehaviour
         
     }
 
-    //GetConnectionsText returns the description of the connection
+    //GetItemsText returns the description of all the items
+    public string GetItemsText()
+    {
+        if (items.Count == 0) return "";
+
+        string result = "You see ";
+        bool first = true;
+
+        foreach (Item item in items)
+        {
+            if (!first) result += " and ";
+            result += item.description;
+            first = false;
+        }
+        result += "\n";
+        return result;
+    }
+
+    //GetConnectionsText returns the description of all the connections
     public string GetConnectionsText()
     {
         string result = "";

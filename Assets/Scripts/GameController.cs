@@ -28,10 +28,12 @@ public class GameController : MonoBehaviour
         
     }
 
+    //Displays all the information on the location
     public void DisplayLocation()
     {
         string description = player.currentLocation.desciption + "\n";
         description += player.currentLocation.GetConnectionsText();
+        description += player.currentLocation.GetItemsText();
         currentText.text = description;
     }
 
