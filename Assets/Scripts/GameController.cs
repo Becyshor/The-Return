@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
     public Text historyText;
     public Text currentText;
 
+    public Action[] actions;
+
     [TextArea]
     public string introText;
 
@@ -56,7 +58,21 @@ public class GameController : MonoBehaviour
         char[] delimiter = {' '};
         string[] separateWords = input.Split(delimiter);
 
-        //todo process the commands (separateWords)
+        foreach (Action action in actions)
+        {
+            if (action.keyword == separateWords[0])
+            {
+                if (separateWords.Length > 1)
+                {
+                    action.RespondToInput(this, separateWords[1]);
+                }
+                else
+                {
+                    action.RespondToInput(this, "");
+                }
+                return;
+            }
+        }
 
         currentText.text = "Nothing happens! (having trouble? type Help)";
     }
