@@ -33,9 +33,12 @@ public class Location : MonoBehaviour
 
         foreach (Item item in items)
         {
-            if (!first) result += " and ";
-            result += item.description;
-            first = false;
+            if (item.itemEnabled)
+            {
+                if (!first) result += " and ";
+                result += item.description;
+                first = false;
+            }
         }
         result += "\n";
         return result;
