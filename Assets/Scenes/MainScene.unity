@@ -550,6 +550,7 @@ MonoBehaviour:
   description: a thread worn tapestry
   playerCanTake: 0
   itemEnabled: 1
+  interactions: []
 --- !u!1 &303794714
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +780,7 @@ MonoBehaviour:
   description: gold coins
   playerCanTake: 1
   itemEnabled: 0
+  interactions: []
 --- !u!1 &461392068
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +882,7 @@ MonoBehaviour:
   description: a robed ferryman
   playerCanTake: 0
   itemEnabled: 1
+  interactions: []
 --- !u!1 &483581214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,6 +1164,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a607d24eed1e6f44c99f36753a0d59a1, type: 2}
   - {fileID: 11400000, guid: 3a45f89fb95ce3e47afc13a484154c08, type: 2}
   - {fileID: 11400000, guid: 57e01ae516ec8bd439e54dac6a044225, type: 2}
+  - {fileID: 11400000, guid: a36f613f4db87164aa127c7fba41b979, type: 2}
   introText: "A thunder crack of splintering wood wrenches you from darkness. A scream
     of shock, heat and \rsweat floods onto the cold shaking ground. Reborn in moss
     and dirt you take one gasping breath of\r acrid smoke then another, and another.
@@ -1596,6 +1600,7 @@ MonoBehaviour:
   description: an old stone well
   playerCanTake: 0
   itemEnabled: 1
+  interactions: []
 --- !u!1 &889978361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1648,7 @@ MonoBehaviour:
   description: a large tree
   playerCanTake: 0
   itemEnabled: 1
+  interactions: []
 --- !u!1 &986929991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,6 +1995,7 @@ MonoBehaviour:
   description: a stone statue, smashed at the waist
   playerCanTake: 0
   itemEnabled: 1
+  interactions: []
 --- !u!1 &1379409269
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,6 +2120,7 @@ MonoBehaviour:
   description: a staff
   playerCanTake: 1
   itemEnabled: 1
+  interactions: []
 --- !u!1 &1578580276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2285,6 +2293,7 @@ MonoBehaviour:
   description: a  smashed statue head
   playerCanTake: 0
   itemEnabled: 1
+  interactions: []
 --- !u!1 &2095671951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,3 +2341,4 @@ MonoBehaviour:
   description: 
   playerCanTake: 0
   itemEnabled: 0
+  interactions: []
