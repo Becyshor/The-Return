@@ -15,7 +15,7 @@ public class Examine : Action
         if (CheckItems(controller, controller.player.inventory, noun))
             return;
 
-        controller.currentText.text = "You can't see a " + noun;
+        controller.currentText.text = "You can't see a " + noun + ".";
     }
 
     private bool CheckItems(GameController controller, List<Item> items, string noun)
@@ -26,7 +26,7 @@ public class Examine : Action
             {
                 if (item.InteractWith(controller, "examine"))
                     return true;
-                controller.currentText.text = "There's nothing interesting about the " + noun;
+                controller.currentText.text = "There's nothing interesting about the " + noun + ".";
                 return true;
             }
         }

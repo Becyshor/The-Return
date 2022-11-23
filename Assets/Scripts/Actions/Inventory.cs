@@ -23,6 +23,6 @@ public class Inventory : Action
                 result += " and a " + item.itemName;
             first = false;
         }
-        controller.currentText.text = result;
+        controller.currentText.text = result + ".";
     }
 }

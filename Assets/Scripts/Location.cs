@@ -40,7 +40,7 @@ public class Location : MonoBehaviour
                 first = false;
             }
         }
-        result += "\n";
+        result += ".\n";
         return result;
     }
 

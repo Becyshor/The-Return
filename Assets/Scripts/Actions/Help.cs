@@ -7,7 +7,7 @@ public class Help : Action
 {
     public override void RespondToInput(GameController controller, string verb)
     {
-        controller.currentText.text = "Type a Verb followed by a Noun (e.g. \"go north\")";
-        controller.currentText.text += "\nAllowed verbs: \nGo, Examine, Get, Use, Inventory, TalkTo, Say, Help";
+        controller.currentText.text = "Type a Verb followed by a Noun (e.g. \"go north\").";
+        controller.currentText.text += "\nAllowed verbs: \nGo, Examine, Get, Use, Inventory, TalkTo, Say, Help.";
     }
 }
