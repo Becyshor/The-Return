@@ -12,13 +12,31 @@ public class Item : MonoBehaviour
     public bool playerCanTake;
     public bool itemEnabled = true;
 
-    void Start()
-    {
-        
-    }
+    public Interaction[] interactions;
 
-    void Update()
+    public bool InteractWith(GameController controller, string actionKeyword)
     {
-        
+        foreach (Interaction interaction in interactions)
+        {
+            if (interaction.action.keyword == actionKeyword)
+            {
+                foreach (Item disableItem in interaction.itemsToDisable)
+                    disableItem.itemEnabled = false;
+
+                foreach (Item enableItem in interaction.itemsToEnable)
+                    enableItem.itemEnabled = true;
+
+                foreach (Connection disableConnection in interaction.connectionsToDisable)
+                    disableConnection.connectionEnabled = false;
+
+                foreach (Connection enableConnection in interaction.connectionsToEnable)
+                    enableConnection.connectionEnabled = true;
+
+                controller.currentText.text = interaction.response;
+
+                return true;
+            }
+        }
+        return false;
     }
 }
