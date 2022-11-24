@@ -390,8 +390,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: Peering north across the sea to a dark shape hovers on the edge of
-    sight.
+  description: Peering <b>north</b> across the sea to a dark shape hovers on the
+    edge of sight.
   location: {fileID: 483581216}
   connectionEnabled: 1
 --- !u!1 &105195699
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: South returns to the chapel.
+  description: <b>South</b> returns to the chapel.
   location: {fileID: 986929993}
   connectionEnabled: 1
 --- !u!4 &113155562
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: tapestry
-  description: a thread worn tapestry
+  description: a thread worn <b>tapestry</b>.
   playerCanTake: 0
   playerCanTalkTo: 0
   playerCanGiveTo: 0
@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: To the south the steps snake down the cliff face to the shore.
+  description: To the <b>south</b> the steps snake down the cliff face to the shore.
   location: {fileID: 483581216}
   connectionEnabled: 1
 --- !u!1 &253692937
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: And an antechamber to the west.
+  description: And an antechamber to the <b>west</b>.
   location: {fileID: 816927519}
   connectionEnabled: 1
 --- !u!1 &254347746
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: To the east is the island.
+  description: To the <b>east</b> is the island.
   location: {fileID: 1159128517}
   connectionEnabled: 1
 --- !u!1 &303794714
@@ -928,8 +928,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 85}
-  m_SizeDelta: {x: 0, y: -170}
+  m_AnchoredPosition: {x: 0, y: 95}
+  m_SizeDelta: {x: 0, y: -190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &375719386
 MonoBehaviour:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: To the north is the rest of the Island.
+  description: To the <b>north</b> is the rest of the Island.
   location: {fileID: 1159128517}
   connectionEnabled: 1
 --- !u!1 &432723867
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: West returns to the Chapel knave.
+  description: <b>West</b> returns to the Chapel knave.
   location: {fileID: 986929993}
   connectionEnabled: 1
 --- !u!1 &433991582
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: coins
-  description: coins
+  description: <b>coins</b>
   playerCanTake: 1
   playerCanTalkTo: 0
   playerCanGiveTo: 0
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: ferryman
-  description: a robed ferryman
+  description: a robed <b>ferryman</b>.
   playerCanTake: 0
   playerCanTalkTo: 1
   playerCanGiveTo: 0
@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: East returns to the Chapel knave.
+  description: <b>East</b> returns to the Chapel knave.
   location: {fileID: 986929993}
   connectionEnabled: 1
 --- !u!1 &595098092
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: To the west lies a shore.
+  description: To the <b>west</b> lies a shore.
   location: {fileID: 751917954}
   connectionEnabled: 1
 --- !u!1 &648016266
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: The wooden bridge leads south over the sea.
+  description: The wooden bridge leads <b>south</b> over the sea.
   location: {fileID: 1203882380}
   connectionEnabled: 1
 --- !u!1 &724880138
@@ -1840,7 +1840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: ferryman
-  description: a robed ferryman
+  description: a robed <b>ferryman</b>.
   playerCanTake: 0
   playerCanTalkTo: 1
   playerCanGiveTo: 1
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: To the west is the island
+  description: To the <b>west</b> is the island
   location: {fileID: 1159128517}
   connectionEnabled: 1
 --- !u!1 &751917952
@@ -2210,7 +2210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: well
-  description: an old stone well
+  description: an old stone <b>well</b>
   playerCanTake: 0
   playerCanTalkTo: 0
   playerCanGiveTo: 0
@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: ferryman
-  description: a robed ferryman
+  description: a robed <b>ferryman</b>.
   playerCanTake: 0
   playerCanTalkTo: 1
   playerCanGiveTo: 0
@@ -2346,7 +2346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: tree
-  description: a large tree
+  description: a large <b>tree</b>.
   playerCanTake: 0
   playerCanTalkTo: 0
   playerCanGiveTo: 0
@@ -2412,10 +2412,7 @@ MonoBehaviour:
   locationName: Chapel
   description: "A dark ruined chapel. In the centre of a dark stone room a smashed
     statue, the plinth and lower half \rof a robed figure. In front of the statue
-    a deep well is carved into the rock. You are drawn to it. Looking down the well
-    leads directly into the sea below, in the water you see piles of coins, some
-    black with age some sparkling gold and silver in the light. A shape swims through
-    the water."
+    a deep well is carved into the rock."
   connections:
   - {fileID: 1877514768}
   - {fileID: 249926551}
@@ -2511,7 +2508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: To the east lies a shore.
+  description: To the <b>east</b> lies a shore.
   location: {fileID: 648016268}
   connectionEnabled: 1
 --- !u!1 &1141779633
@@ -2732,7 +2729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: To the south is the island.
+  description: To the <b>south</b> is the island.
   location: {fileID: 1159128517}
   connectionEnabled: 1
 --- !u!1 &1277848622
@@ -2779,7 +2776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: statue
-  description: a stone statue, smashed at the waist
+  description: a stone <b>statue</b>, smashed at the waist
   playerCanTake: 0
   playerCanTalkTo: 0
   playerCanGiveTo: 0
@@ -2839,7 +2836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: There is an antechamber to the east.
+  description: There is an antechamber to the <b>east</b>.
   location: {fileID: 342992263}
   connectionEnabled: 1
 --- !u!1 &1379409269
@@ -2963,7 +2960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: staff
-  description: a staff
+  description: a <b>staff</b> that can be used as weapon
   playerCanTake: 1
   playerCanTalkTo: 0
   playerCanGiveTo: 0
@@ -3031,8 +3028,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: Steps snake northward, high up the rock face leading to a dark cave
-    entrance.
+  description: Steps snake <b>north</b>ward, high up the rock face leading to a dark
+    cave entrance.
   location: {fileID: 986929993}
   connectionEnabled: 1
 --- !u!1 &1578580276
@@ -3069,8 +3066,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 85}
-  m_SizeDelta: {x: -40, y: 150}
+  m_AnchoredPosition: {x: 0, y: 95}
+  m_SizeDelta: {x: -40, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578580278
 MonoBehaviour:
@@ -3158,7 +3155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: To the north a carved wooden door.
+  description: To the <b>north</b> a carved wooden door.
   location: {fileID: 461392070}
   connectionEnabled: 1
 --- !u!1 &1886605797
@@ -3251,7 +3248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: head
-  description: a smashed statue head
+  description: a smashed statue <b>head</b>.
   playerCanTake: 0
   playerCanTalkTo: 0
   playerCanGiveTo: 0
@@ -3311,7 +3308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: To the south you a large tree.
+  description: To the <b>south</b> you a large tree.
   location: {fileID: 596290976}
   connectionEnabled: 1
 --- !u!1 &2058974442
@@ -3358,7 +3355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: There is a beach to the north.
+  description: There is a beach to the <b>north</b>.
   location: {fileID: 1203882380}
   connectionEnabled: 1
 --- !u!1 &2095671951
@@ -3405,7 +3402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: serpent
-  description: a serpent
+  description: a <b>serpent</b>
   playerCanTake: 0
   playerCanTalkTo: 0
   playerCanGiveTo: 0
