@@ -15,7 +15,7 @@ public class Use : Action
         if (UseItems(controller, controller.player.inventory, noun))
             return;
 
-        controller.currentText.text = "There is no " + noun + ".";
+        controller.currentText.text = "You can't.";
     }
 
     private bool UseItems(GameController controller, List<Item> items, string noun)
@@ -24,8 +24,11 @@ public class Use : Action
         {
             if (item.itemName == noun)
             {
-                if (item.InteractWith(controller, "use"))
-                    return true;
+                if (controller.player.CanUseItem(controller, item))
+                {
+                    if (item.InteractWith(controller, "use"))
+                        return true;
+                }
                 controller.currentText.text = "The " + noun + " does nothing.";
                 return true;
             }

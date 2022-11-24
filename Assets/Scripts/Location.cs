@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -54,6 +55,16 @@ public class Location : MonoBehaviour
                 result += connection.description + "\n";
         }
         return result;
+    }
+
+    internal bool HasItem(Item itemToCheck)
+    {
+        foreach (Item item in items)
+        {
+            if (item == itemToCheck && item.itemEnabled)
+                return true;
+        }
+        return false;
     }
 
     //GetConnection method returns the connection based on a noud (e.g. north, south)

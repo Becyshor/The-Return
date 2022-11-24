@@ -14,6 +14,8 @@ public class Item : MonoBehaviour
 
     public Interaction[] interactions;
 
+    public Item targetItem = null;
+
     public bool InteractWith(GameController controller, string actionKeyword)
     {
         foreach (Interaction interaction in interactions)
@@ -33,6 +35,8 @@ public class Item : MonoBehaviour
                     enableConnection.connectionEnabled = true;
 
                 controller.currentText.text = interaction.response;
+
+                controller.DisplayLocation(true);
 
                 return true;
             }

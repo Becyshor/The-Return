@@ -29,12 +29,22 @@ public class GameController : MonoBehaviour
     }
 
     //Displays all the information on the location
-    public void DisplayLocation()
+    public void DisplayLocation(bool additive = false)
     {
-        string description = player.currentLocation.desciption + "\n";
-        description += player.currentLocation.GetConnectionsText();
-        description += player.currentLocation.GetItemsText();
-        currentText.text = description;
+        string description = "";
+        if (additive)
+        {
+            description += player.currentLocation.GetConnectionsText();
+            description += player.currentLocation.GetItemsText();
+            currentText.text = currentText.text + "\n" + description;
+        }
+        else
+        {
+            description = player.currentLocation.desciption + "\n";
+            description += player.currentLocation.GetConnectionsText();
+            description += player.currentLocation.GetItemsText();
+            currentText.text = description;
+        }
     }
 
     public void TextEntered()

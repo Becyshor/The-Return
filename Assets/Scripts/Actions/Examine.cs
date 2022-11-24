@@ -26,7 +26,7 @@ public class Examine : Action
             {
                 if (item.InteractWith(controller, "examine"))
                     return true;
-                controller.currentText.text = "There's nothing interesting about the " + noun + ".";
+                controller.currentText.text = "You see " + item.description + ".";
                 return true;
             }
         }
