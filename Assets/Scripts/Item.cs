@@ -11,6 +11,8 @@ public class Item : MonoBehaviour
 
     public bool playerCanTake;
     public bool playerCanTalkTo = false;
+    public bool playerCanGiveTo = false;
+
     public bool itemEnabled = true;
 
     public Interaction[] interactions;
@@ -38,8 +40,10 @@ public class Item : MonoBehaviour
                 foreach (Connection enableConnection in interaction.connectionsToEnable)
                     enableConnection.connectionEnabled = true;
 
-                controller.currentText.text = interaction.response;
+                if (interaction.teleportLocation != null)
+                    controller.player.Teleport(controller, interaction.teleportLocation);
 
+                controller.currentText.text = interaction.response;
                 controller.DisplayLocation(true);
 
                 return true;

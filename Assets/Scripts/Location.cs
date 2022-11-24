@@ -8,21 +8,11 @@ public class Location : MonoBehaviour
     public string locationName;
 
     [TextArea]
-    public string desciption;
+    public string description;
 
     public Connection[] connections;
 
     public List<Item> items = new List<Item>();
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     //GetItemsText returns the description of all the items
     public string GetItemsText()

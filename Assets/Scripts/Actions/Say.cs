@@ -23,12 +23,9 @@ public class Say : Action
                 {
                     if (item.InteractWith(controller, "say", noun))
                         return true;
-
-
                 }
             }
         }
-
         return false;
     }
 }

@@ -261,9 +261,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: The End
-  desciption: "The Ferryman\u2019s hand clenches around the gold coins he moves aside
-    and you step onto the boat. As he \rcasts off you look back once at this ghost
-    land and then turn to face a wall of fog as you drift silently into the \runknown."
+  description: "The Ferryman\u2019s hand clenches around the gold coins he moves
+    aside and you step onto the boat. As he \rcasts off you look back once at this
+    ghost land and then turn to face a wall of fog as you drift silently into the
+    \runknown."
   connections: []
   items: []
 --- !u!1 &45568293
@@ -645,8 +646,18 @@ MonoBehaviour:
   description: a thread worn tapestry
   playerCanTake: 0
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 1
-  interactions: []
+  interactions:
+  - action: {fileID: 11400000, guid: a36f613f4db87164aa127c7fba41b979, type: 2}
+    response: "You wipe away years of dust and cobwebs to reveal the tapestry is
+      a moth-eaten depiction\r of ancient Albion. You mouth the word \u201CAlbion\u201D.\r"
+    textToMach: 
+    teleportLocation: {fileID: 0}
+    itemsToDisable: []
+    itemsToEnable: []
+    connectionsToDisable: []
+    connectionsToEnable: []
   targetItem: {fileID: 0}
 --- !u!1 &249926549
 GameObject:
@@ -875,7 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: East Antechamber
-  desciption: A dark antechamber, the remnants of the smashed statue scattered across
+  description: A dark antechamber, the remnants of the smashed statue scattered across
     the dusty stone floor.
   connections:
   - {fileID: 432723869}
@@ -1076,7 +1087,7 @@ GameObject:
   - component: {fileID: 433991583}
   - component: {fileID: 433991584}
   m_Layer: 0
-  m_Name: GoldenCoins
+  m_Name: Coins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1109,9 +1120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: coins
-  description: gold coins
+  description: coins
   playerCanTake: 1
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 0
   interactions: []
   targetItem: {fileID: 0}
@@ -1160,7 +1172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: Dock
-  desciption: "You find yourself walking down a stone jetty, as you move forward,
+  description: "You find yourself walking down a stone jetty, as you move forward,
     slowly a hooded figure \rmaterialises from the mist. A Ferryman stands in his
     boat, it rocks in the gathering wind ringing the\r arrival bell."
   connections:
@@ -1216,11 +1228,13 @@ MonoBehaviour:
   description: a robed ferryman
   playerCanTake: 0
   playerCanTalkTo: 1
+  playerCanGiveTo: 0
   itemEnabled: 1
   interactions:
   - action: {fileID: 11400000, guid: 2729271ba21a40743b65e9eac34b144e, type: 2}
     response: 'Ferryman: Who is it that seeks passage?'
     textToMach: 
+    teleportLocation: {fileID: 0}
     itemsToDisable: []
     itemsToEnable: []
     connectionsToDisable: []
@@ -1228,6 +1242,7 @@ MonoBehaviour:
   - action: {fileID: 11400000, guid: 82ba6f4a261859e479842852be0f5d59, type: 2}
     response: 'Ferryman: Where do you seek?'
     textToMach: merlin
+    teleportLocation: {fileID: 0}
     itemsToDisable:
     - {fileID: 463537445}
     itemsToEnable:
@@ -1281,7 +1296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: Causeway
-  desciption: "Reaching the shore, the walls of an ancient fortification are carved
+  description: "Reaching the shore, the walls of an ancient fortification are carved
     into the cliff face. At the top of the\r cliff a stone chapel looks out over
     the sea."
   connections:
@@ -1562,6 +1577,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8a5b4a4136330ca49aa124721c967740, type: 2}
   - {fileID: 11400000, guid: 2729271ba21a40743b65e9eac34b144e, type: 2}
   - {fileID: 11400000, guid: 82ba6f4a261859e479842852be0f5d59, type: 2}
+  - {fileID: 11400000, guid: cb64889fc40574e48b273d977b1ca56a, type: 2}
   introText: "A thunder crack of splintering wood wrenches you from darkness. A scream
     of shock, heat and \rsweat floods onto the cold shaking ground. Reborn in moss
     and dirt you take one gasping breath of\r acrid smoke then another, and another.
@@ -1631,7 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: Tree
-  desciption: You stand by the tree and touch its blackened and gnarled surface.
+  description: You stand by the tree and touch its blackened and gnarled surface.
   connections:
   - {fileID: 423576572}
   items:
@@ -1728,7 +1744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: East Shore
-  desciption: "You are on a black rock shore that leads to a still silver sea with
+  description: "You are on a black rock shore that leads to a still silver sea with
     no horizon.\r"
   connections:
   - {fileID: 730094599}
@@ -1827,11 +1843,21 @@ MonoBehaviour:
   description: a robed ferryman
   playerCanTake: 0
   playerCanTalkTo: 1
+  playerCanGiveTo: 1
   itemEnabled: 0
   interactions:
   - action: {fileID: 11400000, guid: 2729271ba21a40743b65e9eac34b144e, type: 2}
     response: 'Ferryman: Give me payment.'
     textToMach: 
+    teleportLocation: {fileID: 0}
+    itemsToDisable: []
+    itemsToEnable: []
+    connectionsToDisable: []
+    connectionsToEnable: []
+  - action: {fileID: 11400000, guid: cb64889fc40574e48b273d977b1ca56a, type: 2}
+    response: 
+    textToMach: coins
+    teleportLocation: {fileID: 45429740}
     itemsToDisable: []
     itemsToEnable: []
     connectionsToDisable: []
@@ -1929,8 +1955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: West Shore
-  desciption: "You are on a black rock shore that leads to a still silver sea with
-    no horizon.\r"
+  description: You are on a black rock shore that leads to a still silver sea with
+    no horizon.
   connections:
   - {fileID: 254347748}
   items: []
@@ -2134,7 +2160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: West Antechamber
-  desciption: A dark antechamber, smashed and upturned pews, the wall is covered
+  description: A dark antechamber, smashed and upturned pews, the wall is covered
     with faded artworks and tapestries.
   connections:
   - {fileID: 521257677}
@@ -2187,6 +2213,7 @@ MonoBehaviour:
   description: an old stone well
   playerCanTake: 0
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 1
   interactions:
   - action: {fileID: 11400000, guid: a36f613f4db87164aa127c7fba41b979, type: 2}
@@ -2194,6 +2221,7 @@ MonoBehaviour:
       rows of sparkling \rteeth rushing up to meet you. You fall back and a great
       serpent bursts forth coiling itself round the \rwell towering over you.\r"
     textToMach: 
+    teleportLocation: {fileID: 0}
     itemsToDisable:
     - {fileID: 832145595}
     itemsToEnable:
@@ -2252,11 +2280,13 @@ MonoBehaviour:
   description: a robed ferryman
   playerCanTake: 0
   playerCanTalkTo: 1
+  playerCanGiveTo: 0
   itemEnabled: 0
   interactions:
   - action: {fileID: 11400000, guid: 2729271ba21a40743b65e9eac34b144e, type: 2}
     response: 'Ferryman: Where do you seek?'
     textToMach: 
+    teleportLocation: {fileID: 0}
     itemsToDisable: []
     itemsToEnable: []
     connectionsToDisable: []
@@ -2264,6 +2294,7 @@ MonoBehaviour:
   - action: {fileID: 11400000, guid: 82ba6f4a261859e479842852be0f5d59, type: 2}
     response: 'Ferryman: Give me payment.'
     textToMach: albion
+    teleportLocation: {fileID: 0}
     itemsToDisable:
     - {fileID: 844213147}
     itemsToEnable:
@@ -2318,8 +2349,18 @@ MonoBehaviour:
   description: a large tree
   playerCanTake: 0
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 1
-  interactions: []
+  interactions:
+  - action: {fileID: 11400000, guid: a36f613f4db87164aa127c7fba41b979, type: 2}
+    response: The burning splintered trunk of a twisted tree rent asunder by a powerful
+      force.
+    textToMach: 
+    teleportLocation: {fileID: 0}
+    itemsToDisable: []
+    itemsToEnable: []
+    connectionsToDisable: []
+    connectionsToEnable: []
   targetItem: {fileID: 0}
 --- !u!1 &986929991
 GameObject:
@@ -2369,12 +2410,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: Chapel
-  desciption: "A dark ruined chapel. In the centre of a dark stone room a smashed
+  description: "A dark ruined chapel. In the centre of a dark stone room a smashed
     statue, the plinth and lower half \rof a robed figure. In front of the statue
-    a deep well is carved into the rock. You are drawn to it. \rLooking down the
-    well leads directly into the sea below, in the water you see piles of coins,
-    some black with age some sparkling gold and silver in the light. A shape swims
-    through the water."
+    a deep well is carved into the rock. You are drawn to it. Looking down the well
+    leads directly into the sea below, in the water you see piles of coins, some
+    black with age some sparkling gold and silver in the light. A shape swims through
+    the water."
   connections:
   - {fileID: 1877514768}
   - {fileID: 249926551}
@@ -2587,7 +2628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: Island
-  desciption: "You stand on a misty island.\r"
+  description: You stand on a misty island.
   connections:
   - {fileID: 2058974444}
   - {fileID: 2057482619}
@@ -2640,8 +2681,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: Bridge
-  desciption: "You find yourself at the water\u2019s edge. Sea worn planks tied with
-    barnacle encrusted ropes form a bridge over\r the water fading into the fog."
+  description: "You find yourself at the water\u2019s edge. Sea worn planks tied
+    with barnacle encrusted ropes form a bridge over\r the water fading into the
+    fog."
   connections:
   - {fileID: 52835607}
   - {fileID: 1218511732}
@@ -2740,8 +2782,18 @@ MonoBehaviour:
   description: a stone statue, smashed at the waist
   playerCanTake: 0
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 1
-  interactions: []
+  interactions:
+  - action: {fileID: 11400000, guid: a36f613f4db87164aa127c7fba41b979, type: 2}
+    response: "On the statue\u2019s plinth, carved into the stone the words, \u201CBeyond
+      these walls the great \rwizard lies entwined\u201D.\r"
+    textToMach: 
+    teleportLocation: {fileID: 0}
+    itemsToDisable: []
+    itemsToEnable: []
+    connectionsToDisable: []
+    connectionsToEnable: []
   targetItem: {fileID: 0}
 --- !u!1 &1283819847
 GameObject:
@@ -2914,6 +2966,7 @@ MonoBehaviour:
   description: a staff
   playerCanTake: 1
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 1
   interactions:
   - action: {fileID: 11400000, guid: 8a5b4a4136330ca49aa124721c967740, type: 2}
@@ -2922,6 +2975,7 @@ MonoBehaviour:
       neck, showering the room with gold. As the body\r slumps to the floor the coins
       pump forth like blood."
     textToMach: 
+    teleportLocation: {fileID: 0}
     itemsToDisable:
     - {fileID: 2095671953}
     itemsToEnable:
@@ -3200,8 +3254,18 @@ MonoBehaviour:
   description: a smashed statue head
   playerCanTake: 0
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 1
-  interactions: []
+  interactions:
+  - action: {fileID: 11400000, guid: a36f613f4db87164aa127c7fba41b979, type: 2}
+    response: "You pick up the stone head in both hands. You turn the face towards
+      you, it looks familiar. \r\nYou mouth the word, \u201CMerlin\u201D."
+    textToMach: 
+    teleportLocation: {fileID: 0}
+    itemsToDisable: []
+    itemsToEnable: []
+    connectionsToDisable: []
+    connectionsToEnable: []
   targetItem: {fileID: 0}
 --- !u!1 &2057482617
 GameObject:
@@ -3344,6 +3408,7 @@ MonoBehaviour:
   description: a serpent
   playerCanTake: 0
   playerCanTalkTo: 0
+  playerCanGiveTo: 0
   itemEnabled: 0
   interactions: []
   targetItem: {fileID: 0}

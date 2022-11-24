@@ -10,7 +10,7 @@ public class TalkTo : Action
         if (TalkToItem(controller, controller.player.currentLocation.items, noun))
             return;
 
-        controller.currentText.text = "You can't talk to " + noun;
+        controller.currentText.text = "You can't talk to " + noun + ".";
     }
 
     private bool TalkToItem(GameController controller, List<Item> items, string noun)

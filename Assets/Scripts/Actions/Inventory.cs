@@ -20,7 +20,7 @@ public class Inventory : Action
             if (first)
                 result += "a " + item.itemName;
             else
-                result += " and a " + item.itemName;
+                result += " and " + item.itemName;
             first = false;
         }
         controller.currentText.text = result + ".";

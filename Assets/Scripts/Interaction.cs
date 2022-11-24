@@ -12,6 +12,8 @@ public class Interaction
 
     public string textToMach;
 
+    public Location teleportLocation = null;
+
     public List<Item> itemsToDisable = new List<Item>();
     public List<Item> itemsToEnable = new List<Item>();
     
