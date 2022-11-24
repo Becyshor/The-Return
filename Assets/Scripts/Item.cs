@@ -10,18 +10,22 @@ public class Item : MonoBehaviour
     public string description;
 
     public bool playerCanTake;
+    public bool playerCanTalkTo = false;
     public bool itemEnabled = true;
 
     public Interaction[] interactions;
 
     public Item targetItem = null;
 
-    public bool InteractWith(GameController controller, string actionKeyword)
+    public bool InteractWith(GameController controller, string actionKeyword, string noun = "")
     {
         foreach (Interaction interaction in interactions)
         {
             if (interaction.action.keyword == actionKeyword)
             {
+                if (noun != "" && noun.ToLower() != interaction.textToMach.ToLower())
+                    continue;
+
                 foreach (Item disableItem in interaction.itemsToDisable)
                     disableItem.itemEnabled = false;
 

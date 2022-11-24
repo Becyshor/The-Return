@@ -34,6 +34,11 @@ public class Player : MonoBehaviour
         return false;
     }
 
+    internal bool CanTalkToItem(GameController controller, Item item)
+    {
+        return item.playerCanTalkTo;
+    }
+
     internal bool CanUseItem(GameController controller, Item item)
     {
         if (item.targetItem == null)

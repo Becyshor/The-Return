@@ -22,7 +22,7 @@ public class Examine : Action
     {
         foreach (Item item in items)
         {
-            if (item.itemName == noun)
+            if (item.itemName == noun && item.itemEnabled)
             {
                 if (item.InteractWith(controller, "examine"))
                     return true;
