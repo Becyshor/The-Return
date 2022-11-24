@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     public string description;
 
     public bool playerCanTake;
+    public bool playerCanRead = false;
     public bool playerCanTalkTo = false;
     public bool playerCanGiveTo = false;
 

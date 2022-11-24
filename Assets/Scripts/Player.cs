@@ -9,16 +9,6 @@ public class Player : MonoBehaviour
 
     public List<Item> inventory = new List<Item>();
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     //ChangeLocation method moves the player to the "connectionNoun" location
     public bool ChangeLocation(GameController controller, string connectionNoun)
     {
@@ -47,6 +37,11 @@ public class Player : MonoBehaviour
     internal bool CanTalkToItem(GameController controller, Item item)
     {
         return item.playerCanTalkTo;
+    }
+
+    internal bool CanReadItem(GameController controller, Item item)
+    {
+        return item.playerCanRead;
     }
 
     internal bool CanUseItem(GameController controller, Item item)
